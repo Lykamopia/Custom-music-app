@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { border, color, margin, padding, variant, width, css } from "styled-system";
+import { border, color, height, margin, padding, variant, width } from "styled-system";
 
 const Button = styled.button`
   
@@ -10,12 +10,16 @@ const Button = styled.button`
   color: white;
   outline: none;
   border: none;
-
+&:hover{
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.603);
+}
   ${padding}
   ${color}
   ${border}
   ${margin}
   ${width}
+  ${height}
+
   /* variants */
   ${variant({
     variants: {

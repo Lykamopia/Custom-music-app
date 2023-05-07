@@ -1,6 +1,8 @@
 import { AiFillPlayCircle } from "react-icons/ai";
 import Button from "../UI/Buttton";
 import Update from "../Modal/Update";
+import Wrapper from "../UI/wrapper"
+import Box from "../UI/Box";
 import { useState } from "react";
 import musician from "../../assets/Images/musician.jpg"
 const MusicList = (props) => {
@@ -15,18 +17,18 @@ const MusicList = (props) => {
   };
   
   return (
-    <div className="_wrapper">
-      <div className="__play_image_group">
-        <div className="__play_icon">
+    <Wrapper justifyContent={"space-between"}>
+      <Wrapper>
+        <Box width={'fit-content'} fontSize={'1.5rem'} >
           <AiFillPlayCircle />
-        </div>
-        <div className="Music__image">
+        </Box>
+        <Box width={'4rem'} height={'4rem'} ml={'0.5rem'} textAlign={'center'} borderRadius={'50%'} color={'white'}>
           <img src={musician} alt="Music" style={{ width: '100%', height: '100%',borderRadius:'50%',padding:'0'}}/>
-          </div>
-      </div>
-      <div className="album__name">{props.musicName}</div>
-      <div className="singer__name">{props.artistName}</div>
-      <div className="music__duration">{props.duration}</div>
+          </Box>
+      </Wrapper>
+      <Box color={'black'} fontWeight={'bold'} fontSize={'large'}>{props.musicName}</Box>
+      <Box>{props.artistName}</Box>
+      <Box fontSize={'small'}>{props.duration}</Box>
       {isUpdateBtnClicked ? (
         <>
           <Update 
@@ -43,17 +45,19 @@ const MusicList = (props) => {
           </Button>
         </>
       ) : (
+        
         <Button
           className="__others"
-          color="black"
-          p={0}
+          color="black" 
+          p={0}   
           borderRadius="50%"
           onClick={userInterfaceHandler}
         >
-          ...
+          <Box fontSize={'larger'} fontWeight={'bold'} borderRadius={'50%'} width={'2rem'} height={'2rem'}>...</Box>
         </Button>
+        
       )}
-    </div>
+    </Wrapper>
   );
 };
 

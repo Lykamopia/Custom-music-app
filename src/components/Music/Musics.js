@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import MusicList from "./MusicList";
-import "./MusicList.css";
+import LoaderStyle from "../UI/LoaderStyle";
+import ListStyle from "../UI/List";
 import { useSelector, useDispatch } from "react-redux";
 import { getMusicFetch } from "../../features/Data/DataSlice";
 import Loader from "../../assets/Loader/Loader";
@@ -28,16 +29,14 @@ const Musics = () => {
   });
 
   return (
-    <div className="__verically_scrollable">
+    <div >
       <div>
         {!Loading ? (
-          <ul>{List}</ul>
+          <ListStyle>{List}</ListStyle>
         ) : (
-          <div className="loader">
-            <div className="__fill__loader">
-              <Loader type="spin" color="#343434"/>
-            </div>
-          </div>
+            <LoaderStyle width={'70%'} ml={'15%'} mt={'5%'} >
+              <Loader type="spin" color="#0c395c"/>
+            </LoaderStyle>
         )}
       </div>
     </div>

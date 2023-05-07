@@ -1,9 +1,10 @@
 import { useRef } from "react";
-import "./CreateMusic.css";
 import Button from "../UI/Buttton";
+import Input from "../UI/Input";
+import ModalBg from "../UI/ModalBg"
+import InputWrapper from "../UI/InputWrapper";
 import { useSelector, useDispatch } from "react-redux";
 import {
-  setId,
   setMusicName,
   setArtistName,
   setDuration,
@@ -28,16 +29,8 @@ const CreateMusic = (props) => {
 
   const musicNameHandler = (event) => {
     if (event.target.value.trim().length > 0) {
-      // dispatch(setId(Math.random())); //************************************** */
       dispatch(setMusicName(event.target.value));
-    } //********************************************************************** */  
-      // This is the place that must be edited setId must not be math.random()
-      //********************************************************************** */
-      // This is the place that must be edited setId must not be math.random()
-      //********************************************************************** */
-      // This is the place that must be edited setId must not be math.random()
-      //********************************************************************** */
-      
+    }  
   };
   const artistNameHandler = (event) => {
     if (event.target.value.trim().length > 0)
@@ -69,21 +62,19 @@ const CreateMusic = (props) => {
   };
   return (
     <>
-      <div className="__modal__wrapper" onClick={backToHomeHandler}></div>
-      <div className="__input__display">
+      <ModalBg onClick={backToHomeHandler}></ModalBg>
+      <InputWrapper>
         <h1>{props.Create_Music}</h1>
         <label htmlFor="music_name">Music Name</label>
-        <input
-          type="text"
+        <Input type="text"
           id="music_name"
           placeholder="music name"
           onChange={musicNameHandler}
           onKeyDown={(event) => handleKeyDown(event, 0)}
-          ref={(el) => (inputRefs.current[0] = el)}
-        />{" "}
+          ref={(el) => (inputRefs.current[0] = el)}/>
         <br />
         <label htmlFor="artist_name">Artist Name</label>
-        <input
+        <Input
           type="text"
           id="artist_name"
           placeholder="artist name"
@@ -93,8 +84,9 @@ const CreateMusic = (props) => {
         />
         <br />
         <label htmlFor="duration">Duration</label>
-        <input
+        <Input
           type="text"
+          mx={'2.5rem'}
           id="duration"
           placeholder="e.g: 4:21"
           onChange={durationHandler}
@@ -108,7 +100,7 @@ const CreateMusic = (props) => {
         <Button px={4} variant="cancel" onClick={backToHomeHandler}>
           cancel
         </Button>
-      </div>
+      </InputWrapper>
     </>
   );
 };

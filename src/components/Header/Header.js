@@ -1,5 +1,7 @@
-import "./Header.css";
 import Button from "../UI/Buttton";
+import HeaderStyle from "../UI/HeaderStyle";
+import Wrapper from "../UI/wrapper"
+import Title from "../UI/Title";
 
 const Header = (props) => {
   const createMusicHandler = () => {
@@ -7,8 +9,8 @@ const Header = (props) => {
   };
   return (
     <>
-      <div className="wrapper">
-        <div className="__content__wrapper">
+      <Wrapper justifyContent={'center'}>
+        <HeaderStyle >
           <h1>Free Music For You!</h1>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum unde
@@ -21,15 +23,17 @@ const Header = (props) => {
           <Button p={2} variant="secondary" onClick={createMusicHandler}>
             create
           </Button>
-        </div>
-      </div>
-      <div className="titles">
-        <div className="titles-gap">#</div>
+        </HeaderStyle>
+      </Wrapper>
+      <Title>
+        <div>Yours</div>
+        <div></div>
+        <div></div>
         <div>Music</div>
         <div>Artist</div>
         <div>Duration</div>
         <div>Others</div>
-      </div>
+      </Title>
     </>
   );
 };

@@ -39,7 +39,7 @@ const Update = (props) => {
           Create_Music="Edit Music"
         />
       )}
-      <div className="__updates">
+      <div>
         <Button
           title="edit"
           px={[1, 3]}
@@ -59,7 +59,6 @@ const Update = (props) => {
         >
           <MdDelete/>
         </Button>
-        
       </div>
     </>
   );
