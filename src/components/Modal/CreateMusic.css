@@ -1,0 +1,50 @@
+.__modal__wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200%;
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+    background-color: rgba(92, 92, 92, 0.7);
+    height: 100vh;
+    z-index: 20;
+}
+.__input__display{
+    position: fixed;
+    top: 0;
+    left: 25%;
+    width: 50%;
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+    color: rgb(34, 46, 73);
+    border-radius: 5px;
+    padding: 1rem;
+    margin-top: 5rem;
+    z-index: 50;
+    transition: 1s ease;
+}
+.__input__display input[type="text"]{
+    outline: none;
+    border: none;
+    width: 50%;
+    padding: 0.5rem;
+    margin: 1rem;
+    font-size: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(62, 65, 71);
+    border-radius: 0.5rem;
+    background-color: aliceblue;
+}
+.__input__display input[type="text"]:focus{
+    border-radius: 0;
+    border-bottom: 3px solid green;
+    background-color: white;
+}
+#duration{
+    margin-left: 2.5rem;
+}
+.__input__display label{
+    cursor: pointer;
+    font-weight: bold;
+}

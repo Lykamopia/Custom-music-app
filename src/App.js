@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Header from "./components/Header/Header";
+import Musics from "./components/Music/Musics";
+import CreateMusic from "./components/Modal/CreateMusic";
+// import DeleteConfirm from "./components/Modal/DeleteConfirm";
 
 function App() {
+  const [displayModal, setDisplayModal] = useState(false);
+  const createMusicModal = (props) => {
+    if (props === true) setDisplayModal(true);
+  };
+  const backToHomeHandler = (props) => {
+    if (props === true) setDisplayModal(false);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header createMusicModal={createMusicModal}></Header>
+      <Musics
+        ToHomeHandler={backToHomeHandler}
+      ></Musics>
+      {displayModal && (
+        <CreateMusic
+          ToHomeHandler={backToHomeHandler}
+          Create_Music="Create Music"
+          create="create"
+        />
+      )}
     </div>
   );
 }
