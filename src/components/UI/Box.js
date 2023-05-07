@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { backgroundColor, borderRadius, boxShadow, color, fontSize, fontWeight, height, margin, textAlign, width } from "styled-system";
+import { borderRadius, boxShadow, color, fontSize, fontWeight, height, margin, textAlign, width } from "styled-system";
 
 const Box = styled.div`
 ${width}

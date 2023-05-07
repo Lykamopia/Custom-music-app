@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { background, margin, width } from "styled-system";
+import { margin, width } from "styled-system";
 
 const LoaderStyle = styled.div`
 border-radius: 10px;
