@@ -3,6 +3,7 @@ import Button from "../UI/Buttton";
 import Update from "../Modal/Update";
 import Wrapper from "../UI/wrapper"
 import Box from "../UI/Box";
+import Img from "../UI/Img";
 import { useState } from "react";
 import musician from "../../assets/Images/musician.jpg"
 const MusicList = (props) => {
@@ -23,7 +24,7 @@ const MusicList = (props) => {
           <AiFillPlayCircle />
         </Box>
         <Box width={'4rem'} height={'4rem'} ml={'0.5rem'} textAlign={'center'} borderRadius={'50%'} color={'white'}>
-          <img src={musician} alt="Music" style={{ width: '100%', height: '100%',borderRadius:'50%',padding:'0'}}/>
+          <Img src={musician} alt="Music"/>
           </Box>
       </Wrapper>
       <Box color={'black'} fontWeight={'bold'} fontSize={'large'}>{props.musicName}</Box>
