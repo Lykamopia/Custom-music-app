@@ -11,4 +11,4 @@ This project is a container for different music lists. <br>
 3.Redux saga <br>
 3.Emotion <br>
 4.Styled system <br>
-5.Firebase <br>
+5.Firebase
