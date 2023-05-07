@@ -2,7 +2,7 @@
 
 This project is a container for different music lists. <br>
 #### It can let users 
-### <font color="green"> Create</font>, <font color="blue">Update</font> and <font color="red">Delete </font>
+### Create, Update and Delete 
 #### music lists from the container.
 
 ## Technologies
