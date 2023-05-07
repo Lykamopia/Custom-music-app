@@ -1,6 +1,6 @@
 import Button from "../UI/Buttton";
 import HeaderStyle from "../UI/HeaderStyle";
-import Wrapper from "../UI/wrapper"
+import Wrapper from "../UI/wrapper";
 import Title from "../UI/Title";
 
 const Header = (props) => {
@@ -9,13 +9,13 @@ const Header = (props) => {
   };
   return (
     <>
-      <Wrapper justifyContent={'center'}>
-        <HeaderStyle >
+      <Wrapper justifyContent={"center"}>
+        <HeaderStyle>
           <h1>Free Music For You!</h1>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum unde
-            amet explicabo deserunt dolorem molestiae, eligendi nam itaque
-            nobis. Soluta.
+            Whether you're a die-hard music fan or just looking to find some new
+            tunes, our music list web app has something for everyone. So why
+            wait? <br /><br /> Create and start building your ultimate music library!
             <br />
             <br />
             <b>Create Your Own Music Now</b>
@@ -27,7 +27,6 @@ const Header = (props) => {
       </Wrapper>
       <Title>
         <div>Yours</div>
-        <div></div>
         <div></div>
         <div>Music</div>
         <div>Artist</div>
