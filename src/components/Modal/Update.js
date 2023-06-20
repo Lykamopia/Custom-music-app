@@ -4,7 +4,6 @@ import Button from "../UI/Buttton";
 import CreateMusic from "./CreateMusic";
 import { removeItemSuccess } from "../../features/Data/DataSlice"
 import { MdDelete,MdEdit } from "react-icons/md";
-import DeleteConfirm from "./DeleteConfirm";
 const Update = (props) => {
   const [updateId,setUpdateId] = useState('check');
   const dispatch = useDispatch()
@@ -30,7 +29,6 @@ const Update = (props) => {
 
   return (
     <>
-      {!deleteDisplay === "Deleted" && <DeleteConfirm message="Deleted "/>}
       {!check && isEditBtnClicked &&  (
         <CreateMusic
           ToHomeHandler={backToHomeHandler}
