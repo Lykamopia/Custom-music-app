@@ -73,10 +73,9 @@ Follow the steps below to set up and run the application:
 ## Usage
 
 - The application allows you to manage items through CRUD operations.
-- Click the "Add Item" button to add a new item. Fill in the necessary details and click "Save" to create the item.
-- Existing items are displayed in a list. You can click on an item to view its details, edit it, or delete it.
-- To edit an item, click the "Edit" button, update the details, and click "Save" to apply the changes.
-- To delete an item, click the "Delete" button and confirm the deletion.
+- Click the "Add Item" button to add a new item. Fill in the necessary details and click "Add" to create the item.
+- To edit an item, click the "Edit" button, update the details, and click "update" to apply the changes.
+- To delete an item, click the "Delete" button 
 
 ## Folder Structure
 
