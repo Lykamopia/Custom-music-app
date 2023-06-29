@@ -91,10 +91,6 @@ The project structure follows a common convention for React.js applications:
     |-- index.js
 ```
 
-## Contributing
-
-Contributions to this project are welcome. If you find any bugs or want to add new features, please open an issue or submit a pull request.
-
 ## Acknowledgments
 
 - This project leverages the power of React.js and various libraries to simplify development and enhance the user interface.
