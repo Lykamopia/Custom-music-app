@@ -100,6 +100,6 @@ The project structure follows a common convention for React.js applications:
 
 If you have any questions or suggestions, feel free to reach out to
 
- us at [alex94lykam@gmail.com](alex94lykam@gmail.com).
+ me at [alex94lykam@gmail.com](alex94lykam@gmail.com).
 
 Happy coding!
