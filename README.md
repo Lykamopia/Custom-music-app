@@ -102,4 +102,3 @@ If you have any questions or suggestions, feel free to reach out to
 
  me at [alex94lykam@gmail.com](alex94lykam@gmail.com).
 
-Happy coding!
