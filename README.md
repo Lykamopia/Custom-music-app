@@ -52,12 +52,12 @@ Follow the steps below to set up and run the application:
    - Create a `.env` file in the root directory of the project and add the following:
 
      ```
-     apiKey=YOUR_API_KEY
-     authDomain=YOUR_AUTH_DOMAIN
-     projectId=YOUR_PROJECT_ID
-     storageBucket=YOUR_STORAGE_BUCKET
-     messagingSenderId=YOUR_SENDER_ID
-     appId=YOUR_APP_ID
+     apiKey = YOUR_API_KEY
+     authDomain = YOUR_AUTH_DOMAIN
+     projectId = YOUR_PROJECT_ID
+     storageBucket = YOUR_STORAGE_BUCKET
+     messagingSenderId = YOUR_SENDER_ID
+     appId = YOUR_APP_ID
      ```
 
      Replace `YOUR_API_KEY`, `YOUR_AUTH_DOMAIN`, etc., with your actual Firebase configuration values.
